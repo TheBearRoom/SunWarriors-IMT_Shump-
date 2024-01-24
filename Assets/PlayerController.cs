@@ -11,7 +11,9 @@ public class NewBehaviourScript : MonoBehaviour
     private Transform _transform;
     private Rigidbody2D _rb;
     
-    [SerializeField] float _movemntSpeed = 1;
+    Vector2 previousSpeed = Vector2.zero;
+    [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
+    public int movement_multiplier = 10;
 
 
     void Awake()
@@ -27,21 +29,24 @@ public class NewBehaviourScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 v = _rb.velocity; 
-        v.x = _movemntSpeed;
-        if (_movemntSpeed < -.1f)
+        if (!Mathf.Approximately(_movemntSpeed.magnitude, 0))
         {
-            transform.right = Vector3.left;
+            Vector2 v = _rb.velocity;
+            previousSpeed = _movemntSpeed;
+            v = _movemntSpeed;
+            _rb.velocity = v;
         }
-        if (_movemntSpeed > .1f)
+        else
         {
-            transform.right = Vector3.right;
+            Vector2 v = _rb.velocity;
+            v = previousSpeed;
+            _rb.velocity = v;
+            previousSpeed *= .9f; 
         }
-        float animationSpeed = Mathf.Abs(_movemntSpeed);
     }
     void OnMove(InputValue v)
     {
         print("test1");
-        _movemntSpeed = v.Get<Vector2>().x * 5;
+        _movemntSpeed = v.Get<Vector2>() * movement_multiplier;
     }
 }
