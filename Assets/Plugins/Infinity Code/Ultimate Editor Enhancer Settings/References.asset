@@ -433,5 +433,7 @@ MonoBehaviour:
     color: {r: 0.5764706, g: 0.43921572, b: 0.8588236, a: 1}
     rootOnly: 0
     recursive: 1
-  _sceneHistory: []
+  _sceneHistory:
+  - name: dragooon
+    path: Assets/dragooon.unity
   _notes: []
