@@ -434,6 +434,8 @@ MonoBehaviour:
     rootOnly: 0
     recursive: 1
   _sceneHistory:
+  - name: "Bj\xF6rn scene"
+    path: "Assets/Scenes/Bj\xF6rn scene.unity"
   - name: dragooon
     path: Assets/dragooon.unity
   _notes: []

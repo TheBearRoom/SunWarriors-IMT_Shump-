@@ -13,7 +13,10 @@ public class NewBehaviourScript : MonoBehaviour
     
     Vector2 previousSpeed = Vector2.zero;
     [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
-    public int movement_multiplier = 10;
+    [SerializeField] private float top_speed = 5;
+    [SerializeField] private float acceleration = 0.1f;
+    
+    
 
 
     void Awake()
@@ -29,24 +32,13 @@ public class NewBehaviourScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!Mathf.Approximately(_movemntSpeed.magnitude, 0))
+        if (!Mathf.Approximately(_rb.velocity.x, top_speed) &&! Mathf.Approximately(_movemntSpeed.x, 0)) 
         {
-            Vector2 v = _rb.velocity;
-            previousSpeed = _movemntSpeed;
-            v = _movemntSpeed;
-            _rb.velocity = v;
-        }
-        else
-        {
-            Vector2 v = _rb.velocity;
-            v = previousSpeed;
-            _rb.velocity = v;
-            previousSpeed *= .9f; 
+            _rb.AddForce(Vector2.right * (acceleration * Mathf.Sign(_movemntSpeed.x)));
         }
     }
     void OnMove(InputValue v)
     {
-        print("test1");
-        _movemntSpeed = v.Get<Vector2>() * movement_multiplier;
+        _movemntSpeed = v.Get<Vector2>();
     }
 }

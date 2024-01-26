@@ -269,14 +269,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
-      propertyPath: top_speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
-      propertyPath: acceleration
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: movement_multiplier
       value: 5
       objectReference: {fileID: 0}
@@ -331,10 +323,6 @@ PrefabInstance:
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7424398551812634465, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
-      propertyPath: m_AngularDrag
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8726892663257191819, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_Name
