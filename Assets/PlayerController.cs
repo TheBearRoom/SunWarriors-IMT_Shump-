@@ -16,6 +16,9 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private float top_speed = 5;
     [SerializeField] private float acceleration = 0.1f;
     [SerializeField] private float deacceleration = 0.1f;
+    [SerializeField] private AnimationCurve Anicurve;
+    private float curvePos = 0;
+    
     
     
 
@@ -33,23 +36,47 @@ public class NewBehaviourScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        //The following code is responsible for check if the movement keys get pressed and calculating and adding movement speed
-        if (!Mathf.Approximately(_rb.velocity.x, top_speed) &&! Mathf.Approximately(_movemntSpeed.x, 0)) //If velocity In X-axis =/= Topspeed, && If button is not un-pressed
+        if (_movemntSpeed.x > 0)
         {
-            _rb.AddForce(Vector2.right * (acceleration * Mathf.Sign(_movemntSpeed.x)));
+            curvePos += Time.deltaTime; 
         }
-        if (Mathf.Approximately(_movemntSpeed.magnitude, 0))
+        else
         {
-            Debug.Log("penus1");
-            _rb.drag = 100;
+            curvePos -= Time.deltaTime;
+        }
+        _rb.velocity = new Vector2(Anicurve.Evaluate(curvePos), 0) * top_speed;
+
+
+
+
+
+
+
+
+        /*
+        //The following code is responsible for check if the movement keys is pressed and adding movement speed
+        if (Mathf.Abs(_rb.velocity.x) < top_speed &&! Mathf.Approximately(_movemntSpeed.x, 0)) //If velocity In X-axis =/= Topspeed, && If button is not un-pressed
+        { 
+            _rb.AddForce(Vector2.right * (Anicurve.Evaluate(.5f) * Mathf.Sign(_movemntSpeed.x)));
+        }
+
+        //adds drag when not moving
+        //This is bad, does not work if a WASD key is pressed before another one is realesed
+       /* if (Mathf.Approximately(_movemntSpeed.magnitude, 0)) //If any movement key is not pressed
+        {
+            _rb.drag = 10;
         }
         else
         {
             _rb.drag = 0;
-        }
+        } */
     }
+    
     void OnMove(InputValue v)
     {
+        //TODO: Check if vector 2 suddenly flips from negative to posetive or vice versa,
+        //this means that someone is trying to switch direction by suddenly pressing the oppisate key in a WASD config, whilst having velocity speed in the other way 
+        //If true add a short burst of liniar drag to help the player quickly change direction of movement. 
         _movemntSpeed = v.Get<Vector2>();
     }
 }
