@@ -168,7 +168,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &100643541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &413295978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &1184388587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -743,6 +743,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: drag
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: top_speed
       value: 5
       objectReference: {fileID: 0}
@@ -755,28 +759,76 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[1].time
-      value: 1
+      value: 0.0014628358
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].time
+      value: 0.40153253
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[1].value
+      value: 0.4959052
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].value
+      value: 0.99405587
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[0].inSlope
-      value: 1
+      value: 339.00262
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[1].inSlope
-      value: 1
+      value: 0.5562742
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].inSlope
+      value: 1.2451597
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[0].inWeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[0].outSlope
-      value: 1
+      value: 339.00262
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[1].outSlope
-      value: 1
+      value: 0.5562742
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].outSlope
+      value: 1.2451597
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[1].outWeight
+      value: 0.02324567
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[0].tangentMode
@@ -784,6 +836,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: Anicurve.m_Curve.Array.data[2].tangentMode
       value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
@@ -800,7 +856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.08
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -892,7 +948,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &1871144676
 BoxCollider2D:
   m_ObjectHideFlags: 0

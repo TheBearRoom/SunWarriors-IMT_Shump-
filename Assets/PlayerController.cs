@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using InfinityCode.UltimateEditorEnhancer;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
@@ -13,11 +14,16 @@ public class NewBehaviourScript : MonoBehaviour
     
     Vector2 previousSpeed = Vector2.zero;
     [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
-    [SerializeField] private float top_speed = 5;
-    [SerializeField] private float acceleration = 0.1f;
-    [SerializeField] private float deacceleration = 0.1f;
     [SerializeField] private AnimationCurve Anicurve;
-    private float curvePos = 0;
+    [SerializeField] private int MovMultiplier = 5;
+    [SerializeField] private int drag = 6;
+    private float curvePos;
+    private bool positiveX = false;
+    private bool NegativeX = false;
+    private bool positiveY = false;
+    private bool NegativeY = false;
+    
+    
     
     
     
@@ -36,47 +42,82 @@ public class NewBehaviourScript : MonoBehaviour
 
     void FixedUpdate()
     {
+        Vector2 direction = Vector2 .zero; 
+        //Positive X
         if (_movemntSpeed.x > 0)
         {
             curvePos += Time.deltaTime; 
+            direction.x = (Anicurve.Evaluate(curvePos)) * MovMultiplier;
+            positiveX = true;
         }
         else
         {
-            curvePos -= Time.deltaTime;
+            positiveX = false;
         }
-        _rb.velocity = new Vector2(Anicurve.Evaluate(curvePos), 0) * top_speed;
-
-
-
-
-
-
-
-
-        /*
-        //The following code is responsible for check if the movement keys is pressed and adding movement speed
-        if (Mathf.Abs(_rb.velocity.x) < top_speed &&! Mathf.Approximately(_movemntSpeed.x, 0)) //If velocity In X-axis =/= Topspeed, && If button is not un-pressed
-        { 
-            _rb.AddForce(Vector2.right * (Anicurve.Evaluate(.5f) * Mathf.Sign(_movemntSpeed.x)));
-        }
-
-        //adds drag when not moving
-        //This is bad, does not work if a WASD key is pressed before another one is realesed
-       /* if (Mathf.Approximately(_movemntSpeed.magnitude, 0)) //If any movement key is not pressed
+        
+        //Negative X
+        if (_movemntSpeed.x < 0)
         {
-            _rb.drag = 10;
+            curvePos += Time.deltaTime; 
+            direction.x = (Anicurve.Evaluate(curvePos)) * -MovMultiplier;
+            NegativeX = true;
         }
         else
         {
-            _rb.drag = 0;
-        } */
+            NegativeX = false;
+        }
+        
+        //Positive Y
+        if (_movemntSpeed.y > 0)
+        {
+            curvePos += Time.deltaTime; 
+            direction.y = (Anicurve.Evaluate(curvePos)) * MovMultiplier;
+            positiveY = true;
+        }
+        else
+        {
+            positiveY = false;
+        }
+        
+        //Negative Y
+        if (_movemntSpeed.y < 0)
+        {
+            curvePos += Time.deltaTime; 
+            direction.y = (Anicurve.Evaluate(curvePos)) * -MovMultiplier;
+            NegativeY = true;
+        }
+        else
+        {
+            NegativeY = false;
+        }
+        
+        
+        //slow down if no button pressed
+        if ((positiveX == false) && (NegativeX == false) && (positiveY == false) && (NegativeY == false))
+        {
+            _rb.drag = drag;
+            curvePos = 0;
+            print(_movemntSpeed);
+        }
+        else
+        {
+            _rb.velocity = direction;
+        }
+
+
+
+
+
+        //rotate ship towards mouse
+        
+        
+
+
+
     }
     
     void OnMove(InputValue v)
     {
-        //TODO: Check if vector 2 suddenly flips from negative to posetive or vice versa,
-        //this means that someone is trying to switch direction by suddenly pressing the oppisate key in a WASD config, whilst having velocity speed in the other way 
-        //If true add a short burst of liniar drag to help the player quickly change direction of movement. 
         _movemntSpeed = v.Get<Vector2>();
     }
 }
