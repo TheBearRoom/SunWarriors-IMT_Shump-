@@ -108,14 +108,48 @@ public class NewBehaviourScript : MonoBehaviour
 
 
 
-        //rotate ship towards mouse
-        
         
 
-
-
+        
     }
-    
+
+    void OnRotate(InputValue v)
+    {
+        
+        //rotate ship towards mouse
+        Vector3 mousePosition = v.Get <Vector2>();
+        print(mousePosition);
+        //Vector2.LookAt = Vector2.zero;
+        if (mousePosition.x > 4)
+        {
+            //transform.up = Vector2.right;
+            
+        }
+        if (mousePosition.x < -4)
+        {
+            //transform.up = -Vector2.right;
+        }
+        if (mousePosition.y > 4)
+        {
+            //transform.up = Vector2.up;
+        }
+        if (mousePosition.y < -4)
+        {
+            //transform.up = -Vector2.up;
+       
+        }
+
+        mousePosition *= 10;
+        mousePosition += transform.position;
+        transform.LookAt(mousePosition, Vector3.forward);
+        Vector3 rotate = transform.rotation.eulerAngles;
+        rotate.x = 0;
+        rotate.y = 0;
+        transform.localRotation.eulerAngles = rotate;
+    }
+
+
+
     void OnMove(InputValue v)
     {
         _movemntSpeed = v.Get<Vector2>();
