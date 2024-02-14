@@ -434,8 +434,8 @@ MonoBehaviour:
     rootOnly: 0
     recursive: 1
   _sceneHistory:
-  - name: Game
-    path: Assets/Scenes/Game.unity
+  - name: dragooon
+    path: Assets/Scenes/dragooon.unity
   - name: Main Menu
     path: Assets/Scenes/Main Menu.unity
   _notes: []
