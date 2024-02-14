@@ -747,6 +747,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: skunk
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: top_speed
       value: 5
       objectReference: {fileID: 0}
@@ -755,8 +759,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: turningSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: deacceleration
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: truningSensativity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: Anicurve.m_Curve.Array.size
@@ -842,25 +854,33 @@ PrefabInstance:
       propertyPath: Anicurve.m_Curve.Array.data[2].tangentMode
       value: 34
       objectReference: {fileID: 0}
+    - target: {fileID: 3152545518932530666, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 99.82001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152545518932530666, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 86.80636
+      objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.3558917
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.7183166
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.15
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9357
+      value: -2.1
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -894,11 +914,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7424398551812634465, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872165025007372400, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 66a77bf35df06a04b8c5df0f0e844cda, type: 3}
     - target: {fileID: 8726892663257191819, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3152545518932530666, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

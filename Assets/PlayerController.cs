@@ -5,28 +5,38 @@ using InfinityCode.UltimateEditorEnhancer;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine.Serialization;
 
 public class NewBehaviourScript : MonoBehaviour
 {
     private Transform _transform;
     private Rigidbody2D _rb;
+
+
     
     Vector2 previousSpeed = Vector2.zero;
     [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
     [SerializeField] private AnimationCurve Anicurve;
     [SerializeField] private int MovMultiplier = 5;
     [SerializeField] private int drag = 6;
+    [SerializeField] float turningSpeed = 10;
+    [SerializeField] float truningSensativity = 10f;
+    [SerializeField] float skunk = 2;
     private float curvePos;
     private bool positiveX = false;
     private bool NegativeX = false;
     private bool positiveY = false;
     private bool NegativeY = false;
+    private float _targetAngle = 0;
+
     
     
-    
-    
-    
+
+
+
+
+
 
 
     void Awake()
@@ -37,7 +47,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-        
+        Cursor.visible = false; 
     }
 
     void FixedUpdate()
@@ -97,59 +107,43 @@ public class NewBehaviourScript : MonoBehaviour
         {
             _rb.drag = drag;
             curvePos = 0;
-            print(_movemntSpeed);
         }
         else
         {
             _rb.velocity = direction;
         }
-
-
-
-
-
         
-
         
+        //updtae angel
+       /* float newAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z,_targetAngle, turningSpeed); 
+        transform.eulerAngles = new Vector3(0, 0, newAngle);*/
     }
 
+    void OnRotate2(InputValue )
+    {
+        print("test");
+    }
+
+    /*
+    
     void OnRotate(InputValue v)
     {
-        
-        //rotate ship towards mouse
-        Vector3 mousePosition = v.Get <Vector2>();
-        print(mousePosition);
-        //Vector2.LookAt = Vector2.zero;
-        if (mousePosition.x > 4)
+        var delta = v.Get<Vector2>();
+        delta.y = -delta.y;
+        if (delta.magnitude < truningSensativity)
         {
-            //transform.up = Vector2.right;
-            
-        }
-        if (mousePosition.x < -4)
-        {
-            //transform.up = -Vector2.right;
-        }
-        if (mousePosition.y > 4)
-        {
-            //transform.up = Vector2.up;
-        }
-        if (mousePosition.y < -4)
-        {
-            //transform.up = -Vector2.up;
-       
+            return;
         }
 
-        mousePosition *= 10;
-        mousePosition += transform.position;
-        transform.LookAt(mousePosition, Vector3.forward);
-        Vector3 rotate = transform.rotation.eulerAngles;
-        rotate.x = 0;
-        rotate.y = 0;
-        transform.localRotation.eulerAngles = rotate;
+        delta.x = - delta.x;
+        float newangel = - Vector2.SignedAngle(delta, Vector2.right) + 90;
+        if (Mathf.DeltaAngle(_targetAngle, newangel) > skunk)
+        {
+            _targetAngle = newangel;
+        }
     }
-
-
-
+    */
+    
     void OnMove(InputValue v)
     {
         _movemntSpeed = v.Get<Vector2>();
