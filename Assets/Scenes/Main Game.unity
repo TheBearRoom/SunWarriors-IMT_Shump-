@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 122291822}
   - component: {fileID: 122291821}
   m_Layer: 0
-  m_Name: DragonBodyParts_2
+  m_Name: Vertebrae1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122291820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010001183, y: 3.41, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 0.010001183, y: 3.49, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800137323}
@@ -304,8 +304,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.271, y: 0.77905, z: 0}
-    m_Extent: {x: 1.4055, y: 0.96844995, z: 0}
+    m_Center: {x: 1.2629, y: 0.7694, z: 0}
+    m_Extent: {x: 1.4041001, y: 0.96809995, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -642,7 +642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354509108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03999996, y: -4.6, z: 0}
+  m_LocalPosition: {x: 0, y: -4.6, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -701,8 +701,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.9520501, y: 1.608, z: 0}
-    m_Extent: {x: 3.43115, y: 1.9038, z: 0}
+    m_Center: {x: 1.9561999, y: 1.6093999, z: 0}
+    m_Extent: {x: 3.4345, y: 1.9123, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -894,8 +894,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.021850586, y: -0.04124832, z: 0}
-    m_Extent: {x: 87.66355, y: 87.638855, z: 0}
+    m_Center: {x: 0.025299072, y: -0.051448822, z: 0}
+    m_Extent: {x: 87.678, y: 87.63545, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.87795, y: 1.1936, z: 0}
-    m_Extent: {x: 3.1921499, y: 1.2771, z: 0}
+    m_Center: {x: 1.8785999, y: 1.19845, z: 0}
+    m_Extent: {x: 3.1771, y: 1.28345, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 626968540}
   - component: {fileID: 626968539}
   m_Layer: 0
-  m_Name: pixil-frame-0 (1) (1).01
+  m_Name: Leftwing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1133,8 +1133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626968538}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: -5.73, y: 0.89, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: -3.44, y: 1.91, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2001646515}
@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 643376683}
   - component: {fileID: 643376682}
   m_Layer: 0
-  m_Name: pixil-frame-0 (10)
+  m_Name: Dragonhead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1221,8 +1221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643376681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010001183, y: 1.1198008, z: 0}
-  m_LocalScale: {x: 10.28265, y: 10.4601, z: 1}
+  m_LocalPosition: {x: 0.010001183, y: 2.1398005, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1488779509}
@@ -1296,8 +1296,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.24144995, y: 1.12445, z: 0}
-    m_Extent: {x: 2.1466498, y: 0.92875, z: 0}
+    m_Center: {x: 0.24734998, y: 1.1262001, z: 0}
+    m_Extent: {x: 2.14625, y: 0.92440003, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -1394,8 +1394,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0077499747, y: 0.6656, z: 0}
-    m_Extent: {x: 1.14645, y: 1.0904, z: 0}
+    m_Center: {x: -0.009000003, y: 0.6716, z: 0}
+    m_Extent: {x: 1.1537001, y: 1.087, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -1496,8 +1496,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.23834991, y: 1.1294, z: 0}
-    m_Extent: {x: 2.14675, y: 0.9208, z: 0}
+    m_Center: {x: 0.24729997, y: 1.1258999, z: 0}
+    m_Extent: {x: 2.1445, y: 0.92739993, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -1538,7 +1538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 800137323}
   m_Layer: 0
-  m_Name: GameObject.01
+  m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,9 +1559,9 @@ Transform:
   - {fileID: 643376683}
   - {fileID: 1137980465}
   - {fileID: 626968540}
-  - {fileID: 1440099645}
-  - {fileID: 1532832156}
   - {fileID: 122291822}
+  - {fileID: 1532832156}
+  - {fileID: 1440099645}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 1137980465}
   - component: {fileID: 1137980464}
   m_Layer: 0
-  m_Name: pixil-frame-0 (1) (1)
+  m_Name: Rightwing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1726,8 +1726,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137980463}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 5.749999, y: 0.8899995, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 3.44, y: 1.91, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 429621862}
@@ -1885,7 +1885,7 @@ GameObject:
   - component: {fileID: 1440099645}
   - component: {fileID: 1440099644}
   m_Layer: 0
-  m_Name: DragonBodyParts_0
+  m_Name: Vertebrae3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,8 +1951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440099643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010001183, y: 6.34, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 0.010001183, y: 5.12, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800137323}
@@ -2009,8 +2009,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0080500245, y: 0.6673, z: 0}
-    m_Extent: {x: 1.1442499, y: 1.0843, z: 0}
+    m_Center: {x: -0.006300032, y: 0.67149997, z: 0}
+    m_Extent: {x: 1.1456001, y: 1.0857, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -2071,7 +2071,7 @@ GameObject:
   - component: {fileID: 1532832156}
   - component: {fileID: 1532832155}
   m_Layer: 0
-  m_Name: DragonBodyParts_1
+  m_Name: Vertebrae2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2137,8 +2137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532832154}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010001183, y: 4.8600006, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 0.010001183, y: 4.28, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800137323}
@@ -2210,8 +2210,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.8755, y: 1.2019501, z: 0}
-    m_Extent: {x: 3.1856, y: 1.27665, z: 0}
+    m_Center: {x: 1.8795002, y: 1.19805, z: 0}
+    m_Extent: {x: 3.1852, y: 1.27735, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -2349,7 +2349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691702146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 0.19, z: 0}
+  m_LocalPosition: {x: -10.35, y: 9.03, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2504,8 +2504,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.94835, y: 1.60935, z: 0}
-    m_Extent: {x: 3.43895, y: 1.89785, z: 0}
+    m_Center: {x: 1.954, y: 1.61035, z: 0}
+    m_Extent: {x: 3.4358, y: 1.90355, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
@@ -2682,8 +2682,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.2633, y: 0.7705, z: 0}
-    m_Extent: {x: 1.4133, y: 0.9718, z: 0}
+    m_Center: {x: 1.2664, y: 0.77405, z: 0}
+    m_Extent: {x: 1.4125, y: 0.96815, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 54.619476
   m_PointLightInnerRadius: 0
