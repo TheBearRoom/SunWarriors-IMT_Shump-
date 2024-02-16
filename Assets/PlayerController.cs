@@ -12,33 +12,21 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private Transform _transform;
     private Rigidbody2D _rb;
-
-
-    
     Vector2 previousSpeed = Vector2.zero;
     [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
     [SerializeField] private AnimationCurve Anicurve;
     [SerializeField] private int MovMultiplier = 5;
     [SerializeField] private int drag = 6;
     [SerializeField] float turningSpeed = 10;
-    [SerializeField] float truningSensativity = 10f;
-    [SerializeField] float skunk = 2;
+    private int test_int = 0;
     private float curvePos;
     private bool positiveX = false;
     private bool NegativeX = false;
     private bool positiveY = false;
     private bool NegativeY = false;
     private float _targetAngle = 0;
-
     
     
-
-
-
-
-
-
-
     void Awake()
     {
         _transform = transform;
@@ -113,39 +101,29 @@ public class NewBehaviourScript : MonoBehaviour
             _rb.velocity = direction;
         }
         
-        
-        //updtae angel
-       /* float newAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z,_targetAngle, turningSpeed); 
-        transform.eulerAngles = new Vector3(0, 0, newAngle);*/
+        //updtae angel and turn smoothly, e.g anti-snap
+       float newAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z,_targetAngle, turningSpeed);
+       transform.eulerAngles = new Vector3(0, 0, newAngle);
     }
-
-    void OnRotate2(InputValue )
-    {
-        print("test");
-    }
-
-    /*
     
-    void OnRotate(InputValue v)
+    //fetch new rotation based on arrow keys
+    void OnAim(InputValue v)
     {
-        var delta = v.Get<Vector2>();
-        delta.y = -delta.y;
-        if (delta.magnitude < truningSensativity)
-        {
-            return;
-        }
-
-        delta.x = - delta.x;
-        float newangel = - Vector2.SignedAngle(delta, Vector2.right) + 90;
-        if (Mathf.DeltaAngle(_targetAngle, newangel) > skunk)
-        {
-            _targetAngle = newangel;
-        }
+        var test = v.Get<Vector2>();
+        test.x = -test.x;
+        _targetAngle = Vector2.SignedAngle(test, Vector2.up); 
     }
-    */
-    
     void OnMove(InputValue v)
     {
         _movemntSpeed = v.Get<Vector2>();
     }
+
+    void OnFire(InputValue v)
+    {
+        print(test_int);
+        test_int++;
+        
+        
+    }
+    
 }

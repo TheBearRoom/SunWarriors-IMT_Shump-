@@ -760,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: turningSpeed
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: deacceleration
@@ -880,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1
+      value: -2.515
       objectReference: {fileID: 0}
     - target: {fileID: 7297403172181893793, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: m_LocalPosition.z

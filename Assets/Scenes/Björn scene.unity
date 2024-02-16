@@ -760,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: turningSpeed
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -1976579169695583608, guid: 689ad1581e9095c44bb061c64fcfd8db, type: 3}
       propertyPath: deacceleration

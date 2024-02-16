@@ -18,7 +18,16 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "f09985aa-2bf9-467d-98a4-c7d8a8306dab",
-                    "expectedControlType": "Dpad",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "8b619671-ca88-479b-979d-0658453f9754",
+                    "expectedControlType": "Analog",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -31,22 +40,13 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "rotate2",
-                    "type": "Button",
-                    "id": "417f67b6-ff15-4030-98f2-b0ff964e8b4f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "829b7e51-92d2-4c08-a245-c399e860e0e5",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "*/{PrimaryTrigger}",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controls",
@@ -187,48 +187,114 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "b75e003c-80f4-4e6d-821a-50d4bc234484",
+                    "name": "2D Vector",
+                    "id": "0d7470bf-b8d0-4fc1-808d-d0b8f8905286",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "688a0c41-a785-4899-a2a2-8a915326c8ce",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controls",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "819af489-43c3-4201-a80f-7484b712f0bb",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controls",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "b842027b-c675-418d-a1c6-aa268f376fb0",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controls",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "137b8ae4-e1ec-485f-9775-bfde5a65149f",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controls",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "ace067d1-6d1e-4b11-be96-c5456f122e0e",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "101a02fe-8af7-4775-8bd5-d7e53d703df7",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "rotate2",
+                    "groups": "Controls",
+                    "action": "Aim",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "180cd90e-8768-4682-9e7d-dd27856ac030",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "rotate2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "430389d1-451e-4dd5-b3cf-f05ccea1f427",
+                    "name": "down",
+                    "id": "34775e1b-f17d-4d41-92bd-f76991e3fdbb",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "rotate2",
+                    "groups": "Controls",
+                    "action": "Aim",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "c26b33f3-9bd6-4605-980c-d75e3081b4d2",
+                    "name": "left",
+                    "id": "2958315e-501d-4536-988a-04bbabb514f3",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "rotate2",
+                    "groups": "Controls",
+                    "action": "Aim",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2ef48b0d-8773-4561-955b-266c02218fef",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controls",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
