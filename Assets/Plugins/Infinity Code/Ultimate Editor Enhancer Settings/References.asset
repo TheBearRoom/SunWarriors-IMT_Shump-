@@ -436,6 +436,8 @@ MonoBehaviour:
   _sceneHistory:
   - name: DragonShootTestScene
     path: Assets/Scenes/DragonShootTestScene.unity
+  - name: dragooon
+    path: Assets/Scenes/dragooon.unity
   - name: Main Menu
     path: Assets/Scenes/Main Menu.unity
   _notes: []

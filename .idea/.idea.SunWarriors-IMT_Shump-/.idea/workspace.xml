@@ -3,17 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a6d7ba5c-92e7-4ad9-a4da-c3adef7dc2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SunWarriors-IMT_Shump-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SunWarriors-IMT_Shump-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/LocalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/LocalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/LocalSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/LocalSettings.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/References.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/References.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/References.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Infinity Code/Ultimate Editor Enhancer Settings/References.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DragonShootTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DragonShootTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragonShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragonShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragonProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,6 +74,7 @@
       <workItem from="1705484386459" duration="2519000" />
       <workItem from="1706087633392" duration="2953000" />
       <workItem from="1707903514858" duration="1033000" />
+      <workItem from="1708075982457" duration="923000" />
     </task>
     <servers />
   </component>
@@ -83,6 +84,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

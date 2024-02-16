@@ -27,6 +27,6 @@ public class DragonShoot : MonoBehaviour
 
     void shoot()
     {
-        Instantiate(projectile, projectilePos.position, Quaternion.identity);
+        Instantiate(projectile, projectilePos.position, Quaternion.identity); 
     }
 }
