@@ -25,6 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
     private bool positiveY = false;
     private bool NegativeY = false;
     private float _targetAngle = 0;
+    public int active_gun = 0;
     
     
     void Awake()
@@ -122,7 +123,29 @@ public class NewBehaviourScript : MonoBehaviour
     {
         print(test_int);
         test_int++;
-        
+        switch (active_gun)
+        {
+            case 0:
+            {
+                gun0();
+                active_gun++;
+                break;
+            }
+            case 1:
+            {
+                gun1();
+                active_gun++;
+                break;
+            }
+        }
+        if (active_gun >= 1)
+        {
+            active_gun = 0;
+        }
+    }
+
+    void sponge()
+    {
         
     }
     
