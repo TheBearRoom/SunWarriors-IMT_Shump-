@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14337642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.54, y: -3.1, z: 0}
+  m_LocalPosition: {x: 5.36, y: -3.1, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -307,6 +307,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3209910441734975705, guid: 77b904dc918afb3479af8d28fd828d82, type: 3}
   projectilePos: {fileID: 1909054222}
+  rotateTowards: {fileID: 14337642}
+  speed: 1
+  rotationModifier: -90
 --- !u!1 &1909054221
 GameObject:
   m_ObjectHideFlags: 0
