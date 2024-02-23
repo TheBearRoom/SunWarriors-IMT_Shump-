@@ -13,6 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
     private Transform _transform;
     private Rigidbody2D _rb;
     Vector2 previousSpeed = Vector2.zero;
+    [SerializeField] private List<GameObject> weapons=new();
     [SerializeField] Vector2 _movemntSpeed = Vector2.zero; //Misleading name, changing this vector will give the player an initial movement force when spawning. See movement multiplier. 
     [SerializeField] private AnimationCurve Anicurve;
     [SerializeField] private int MovMultiplier = 5;
@@ -89,8 +90,6 @@ public class NewBehaviourScript : MonoBehaviour
         {
             NegativeY = false;
         }
-        
-        
         //slow down if no button pressed
         if ((positiveX == false) && (NegativeX == false) && (positiveY == false) && (NegativeY == false))
         {
@@ -106,7 +105,6 @@ public class NewBehaviourScript : MonoBehaviour
        float newAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z,_targetAngle, turningSpeed);
        transform.eulerAngles = new Vector3(0, 0, newAngle);
     }
-    
     //fetch new rotation based on arrow keys
     void OnAim(InputValue v)
     {
@@ -121,32 +119,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     void OnFire(InputValue v)
     {
-        print(test_int);
-        test_int++;
-        switch (active_gun)
-        {
-            case 0:
-            {
-                gun0();
-                active_gun++;
-                break;
-            }
-            case 1:
-            {
-                gun1();
-                active_gun++;
-                break;
-            }
-        }
-        if (active_gun >= 1)
-        {
-            active_gun = 0;
-        }
+        GetComponent<Weapons>().FireAllWeapons();
     }
-
-    void sponge()
-    {
-        
-    }
-    
 }
