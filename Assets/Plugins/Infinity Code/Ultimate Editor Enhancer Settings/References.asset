@@ -438,8 +438,8 @@ MonoBehaviour:
     path: Assets/Scenes/Main Game.unity
   - name: Main Menu
     path: Assets/Scenes/Main Menu.unity
-  - name: dragooon
-    path: Assets/Scenes/dragooon.unity
+  - name: End menu
+    path: Assets/Scenes/End menu.unity
   - name: "Bj\xF6rn scene"
     path: "Assets/Scenes/Bj\xF6rn scene.unity"
   - name: Game
