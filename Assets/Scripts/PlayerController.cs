@@ -8,7 +8,7 @@ using TMPro;
 using Unity.Mathematics;
 using UnityEngine.Serialization;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayController : MonoBehaviour
 {
     private Transform _transform;
     private Rigidbody2D _rb;
