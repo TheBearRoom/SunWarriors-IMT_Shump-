@@ -27,8 +27,9 @@ public class PlayController : MonoBehaviour
     private bool NegativeY = false;
     private float _targetAngle = 0;
     public int active_gun = 0;
-    
-    
+  
+
+
     void Awake()
     {
         _transform = transform;
@@ -104,7 +105,17 @@ public class PlayController : MonoBehaviour
         //updtae angel and turn smoothly, e.g anti-snap
        float newAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z,_targetAngle, turningSpeed);
        transform.eulerAngles = new Vector3(0, 0, newAngle);
+
+
+       
+
     }
+    
+    
+    
+    
+    
+    
     //fetch new rotation based on arrow keys
     void OnAim(InputValue v)
     {
@@ -120,5 +131,6 @@ public class PlayController : MonoBehaviour
     void OnFire(InputValue v)
     {
         GetComponent<Weapons>().FireAllWeapons();
+
     }
 }
