@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
@@ -27,6 +28,8 @@ public class PlayController : MonoBehaviour
     private bool NegativeY = false;
     private float _targetAngle = 0;
     public int active_gun = 0;
+    private bool isFireing = false;
+    
   
 
 
@@ -39,6 +42,14 @@ public class PlayController : MonoBehaviour
     void Start()
     {
         Cursor.visible = false; 
+    }
+
+    private void Update()
+    {
+        if (isFireing)
+        {
+            GetComponent<Weapons>().FireAllWeapons();
+        }
     }
 
     void FixedUpdate()
@@ -125,7 +136,6 @@ public class PlayController : MonoBehaviour
 
     void OnFire(InputValue v)
     {
-        GetComponent<Weapons>().FireAllWeapons();
-
+        isFireing = v.isPressed; 
     }
 }

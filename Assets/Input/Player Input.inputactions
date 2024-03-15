@@ -58,7 +58,7 @@
                     "name": "",
                     "id": "22649913-43ea-4d35-8c79-79810bbf7874",
                     "path": "<Keyboard>/space",
-                    "interactions": "Hold(duration=0.01,pressPoint=0.1)",
+                    "interactions": "Press(pressPoint=0.01,behavior=2)",
                     "processors": "",
                     "groups": "Controls",
                     "action": "Fire",
