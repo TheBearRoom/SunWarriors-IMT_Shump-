@@ -44,7 +44,7 @@ public class OnPlayerBullet : MonoBehaviour
 
         if (collision.gameObject.CompareTag("enemy"))
         {
-            TestFunction();
+            collision.gameObject.GetComponent<EnemyDamgeTaking>().takeDamage();
             Destroy(gameObject);
         }
     }
