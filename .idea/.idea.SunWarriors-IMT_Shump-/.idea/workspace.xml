@@ -4,6 +4,8 @@
     <list default="true" id="a6d7ba5c-92e7-4ad9-a4da-c3adef7dc2cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SunWarriors-IMT_Shump-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SunWarriors-IMT_Shump-/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DragonShootTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DragonShootTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragonShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragonShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VertebraeRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VertebraeRotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +15,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragonProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragonSweep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VertebraeRotation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -78,6 +81,8 @@
       <workItem from="1708506317256" duration="2134000" />
       <workItem from="1708598893920" duration="378000" />
       <workItem from="1709715243830" duration="2234000" />
+      <workItem from="1709891178941" duration="4109000" />
+      <workItem from="1711100442029" duration="4570000" />
     </task>
     <servers />
   </component>

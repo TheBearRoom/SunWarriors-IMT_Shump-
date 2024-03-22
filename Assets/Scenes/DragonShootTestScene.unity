@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movemntSpeed: {x: 0, y: 0}
-  movement_multiplier: 10
+  movement_multiplier: 7
 --- !u!114 &14337647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 1345017035}
   - component: {fileID: 1345017034}
   - component: {fileID: 1345017036}
+  - component: {fileID: 1345017037}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Untagged
@@ -717,9 +718,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3209910441734975705, guid: 77b904dc918afb3479af8d28fd828d82, type: 3}
   projectilePos: {fileID: 1909054222}
+  randomNumber: 0
   rotateTowards: {fileID: 14337642}
   speed: 2
   rotationModifier: -90
+--- !u!114 &1345017037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345017033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad36a76c62a5a1444bb19af8a7d478db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1345017033}
+  speed: 1
+--- !u!1 &1426926055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426926056}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426926056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426926055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.76, y: 0.22969529, z: -0.04169674}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603444022
 GameObject:
   m_ObjectHideFlags: 0

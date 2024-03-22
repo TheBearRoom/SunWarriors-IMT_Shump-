@@ -19,7 +19,7 @@ public class Vertebrae : MonoBehaviour
     
     private void FixedUpdate()
     {
-        //Dragon head rotation towards player
+        //Dragon's vertbraes rotation towards player
         if(rotateTowards != null)
         {
             Vector3 vectorToTarget = rotateTowards.transform.position - transform.position;
